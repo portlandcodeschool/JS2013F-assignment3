@@ -1,6 +1,4 @@
-if(!module.parent) { // This is here for me use. Don't worry about it.
-
-// Put any code you need to test your functions in here
+if(!module.parent) { // Put any code you need to test your functions in here:
 
 // Example:
 console.log("53 in roman numerals is: " + decimalToRoman(53));  
