@@ -2,9 +2,9 @@ var temperature = 86;
 
 // You shouldn't need any of these variables
 // Even if you did, they shouldn't be strings
-var resultF = " ";
-var resultC = " ";
-var x = " ";
+
+
+
 
 console.log(temperature + " degrees Fahrenheit is " +
             fahrenheitToCelsius(temperature) + " degrees Celsius");
@@ -14,7 +14,8 @@ console.log(temperature + " degrees Celsius is " +
 
 console.log(fahrenheitToCelsius(temperature = 95) + " degrees Celsius is a pretty hot day!");
 
-console.log("Water boils at " + boilingWater(x) + " degrees Fahrenheit.");
+console.log("Water boils at " + celsiusToFahrenheit(100) + " degrees Fahrenheit."); //Doesn't ever return the right value. But why? Please to tell me.
+
 
 /* What? How can I call the functions above when they're not defined until below?
    Well, functions that are defined within the current scope (top-level scope in
@@ -24,17 +25,17 @@ console.log("Water boils at " + boilingWater(x) + " degrees Fahrenheit.");
 function celsiusToFahrenheit () {
   // You should not use a global variable for the function return value
   // You don't really need a variable at all here. Just return the value of the expression.
-  resultF = (temperature * 9) / 5 + 32;
-  return resultF;
+  return (temperature * 9) / 5 + 32;
+  
 }
 
 function fahrenheitToCelsius () {
   // Same comments as above
-  resultC = ((temperature - 32) * 5) / 9;
-  return resultC;
+  return ((temperature - 32) * 5) / 9;
+  
 }
 
-function boilingWater () { // This function is unnecessary. Use celsiusToFahrenheit(100) instead.
+/*function boilingWater () { // This function is unnecessary. Use celsiusToFahrenheit(100) instead.
   x = (100 * 9) / 5 + 32;
   return x;
-}
+}*/
