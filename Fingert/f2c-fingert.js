@@ -1,4 +1,7 @@
 var temperature = 86;
+
+// You shouldn't need any of these variables
+// Even if you did, they shouldn't be strings
 var resultF = " ";
 var resultC = " ";
 var x = " ";
@@ -19,18 +22,19 @@ console.log("Water boils at " + boilingWater(x) + " degrees Fahrenheit.");
    can make a convention of defining our functions at the end of current scope. */
 
 function celsiusToFahrenheit () {
-  // implement me!
+  // You should not use a global variable for the function return value
+  // You don't really need a variable at all here. Just return the value of the expression.
   resultF = (temperature * 9) / 5 + 32;
   return resultF;
 }
 
 function fahrenheitToCelsius () {
-  // implement me!
+  // Same comments as above
   resultC = ((temperature - 32) * 5) / 9;
   return resultC;
 }
 
-function boilingWater () {
+function boilingWater () { // This function is unnecessary. Use celsiusToFahrenheit(100) instead.
   x = (100 * 9) / 5 + 32;
   return x;
 }
