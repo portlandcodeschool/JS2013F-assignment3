@@ -1,3 +1,6 @@
+/*couldn't figure-out how to convert double/triple/etc.-digit Roman strings to Dec. 
+But, this is a start*/
+
 if(!module.parent) { // Put any code you need to test your functions in here:
   var num = 67;
   var Roman = "V";
