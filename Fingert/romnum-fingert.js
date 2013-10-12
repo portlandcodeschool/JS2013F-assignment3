@@ -138,6 +138,23 @@ function romanToDecimal (romNumeral) {
   
 }
 
+function decToRom (){
+  var hunds = " ";
+  var tens = " ";
+  var ones = " ";
+
+
+  if(Math.floor(num / 100) === "1"){
+    hunds = "C";
+  }
+  else if(Math.floor(num / 10) === "1"){
+    hunds = "x";
+  }
+
+  return hunds;
+
+}
+
 // Don't worry about this stuff. It's here so I can more easily test your code.
 
 module.exports.decimalToRoman = decimalToRoman;
