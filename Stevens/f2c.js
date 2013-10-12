@@ -16,21 +16,28 @@ console.log("Water boils at " + celsiusToFahrenheit(100) + " degrees Fahrenheit.
    can make a convention of defining our functions at the end of current scope. */
 
 function celsiusToFahrenheit (temperature) {
-  var tempF = ""
-  var offset = 32
-  var scale = 9/5	
+  var tempF = "";
+  var offset = 32;
+  var scale = 9/5	;
 
   tempF = ((scale * temperature) + offset);
   
-  return tempF
+  return tempF;
+
+  // You don't need all these local variables
+  // you can just do:
+  // return ((9 / 5 * temperature) + 32);
 }
 
 function fahrenheitToCelsius (temperature) {
-  var tempC = ""
-  var offset = 32
-  var scale = 5/9	
+  var tempC = "";
+  var offset = 32;
+  var scale = 5/9;
 
   tempC = ((temperature - offset) * scale);
   
-  return tempC
+  return tempC;
 }
+
+// Use semicolons
+// Great work overall!
