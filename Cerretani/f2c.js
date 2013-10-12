@@ -16,11 +16,16 @@ console.log("Water boils at " + celsiusToFahrenheit(100) + " degrees Fahrenheit.
    can make a convention of defining our functions at the end of current scope. */
 
 function celsiusToFahrenheit (tempC) {
-  var tempF = (1.8) * tempC + 32
-  return tempF
+  var tempF = (1.8) * tempC + 32;
+  return tempF;
 }
 
 function fahrenheitToCelsius (tempF) {
-  var tempC = (tempF - 32) / 1.8
+  var tempC = (tempF - 32) / 1.8;
   return tempC;
+  
+  // instead, just do:
+  // return (tempF - 32) / 1.8;
 }
+
+// Great work! - dlmanning
