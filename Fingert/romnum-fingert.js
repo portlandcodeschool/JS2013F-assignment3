@@ -7,6 +7,7 @@ if(!module.parent) { // Put any code you need to test your functions in here:
 // Example:
 console.log("53 in roman numerals is: " + decimalToRoman(num));  
 console.log(Roman + " in decimal form would be: " + romanToDecimal(Roman));
+console.log(decToRom (num));
 
 }
 /*-----------------------------------------------------------------------------
