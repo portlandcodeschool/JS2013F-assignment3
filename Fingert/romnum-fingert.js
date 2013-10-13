@@ -7,6 +7,7 @@ if(!module.parent) { // Put any code you need to test your functions in here:
 // Example:
 console.log("53 in roman numerals is: " + decimalToRoman(num));  
 console.log(Roman + " in decimal form would be: " + romanToDecimal(Roman));
+console.log(decToRom (num));
 
 }
 /*-----------------------------------------------------------------------------
@@ -136,6 +137,23 @@ function romanToDecimal (romNumeral) {
     return secondDigit;
   
   
+}
+
+function decToRom (){
+  var hunds = " ";
+  var tens = " ";
+  var ones = " ";
+
+
+  if(Math.floor(num / 100) === "1"){
+    hunds = "C";
+  }
+  else if(Math.floor(num / 10) === "1"){
+    hunds = "x";
+  }
+
+  return hunds;
+
 }
 
 // Don't worry about this stuff. It's here so I can more easily test your code.

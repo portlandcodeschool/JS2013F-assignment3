@@ -18,9 +18,14 @@ console.log("Water boils at " + celsiusToFahrenheit(100) + " degrees Fahrenheit.
 function celsiusToFahrenheit (cTemp) {
   var fTemp = (9/5) * cTemp + 32;
   return fTemp;
+
+  // You don't need any local variables here. Just do:
+  // return (9/5) * cTemp + 32;
 }
 
 function fahrenheitToCelsius (fTemp) {
   var cTemp = (5/9) * (fTemp - 32);
   return cTemp;
 }
+
+// Great work. Very clean. -dlmanning
