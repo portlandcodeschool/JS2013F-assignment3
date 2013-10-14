@@ -180,7 +180,7 @@ function romanToDecimal (romNumeral) {
       decNumber += 400;
     };
 
-    if (romNumeral[i] === "C" && romNumeral[i - 1] !== "X") {
+    if (romNumeral[i] === "C" && romNumeral[i - 1] !== "X" && romNumeral[i + 1] !== "D" && romNumeral[i + 1] !== "M") {
       decNumber += 100;
     };
     
@@ -196,7 +196,7 @@ function romanToDecimal (romNumeral) {
       decNumber += 40;
     };
     
-    if (romNumeral[i] === "X" && romNumeral[i - 1] !== "I") {
+    if (romNumeral[i] === "X" && romNumeral[i - 1] !== "I" && romNumeral[i + 1] !== "L" && romNumeral[i + 1] !== "C") {
       decNumber += 10;
     };
     
@@ -212,7 +212,7 @@ function romanToDecimal (romNumeral) {
       decNumber += 4;
     };
 
-    if (romNumeral[i] === "I" && romNumeral[i + 1] !== "V") {
+    if (romNumeral[i] === "I" && romNumeral[i + 1] !== "V" && romNumeral[i + 1] !== "X") {
       decNumber += 1;
     };
 
