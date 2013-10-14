@@ -15,12 +15,14 @@ console.log("Water boils at " + celsiusToFahrenheit(100) + " degrees Fahrenheit.
    this case) are "hoisted" to the top of the program at runtime. This means we
    can make a convention of defining our functions at the end of current scope. */
 
-function celsiusToFahrenheit (tempC) {
-	var tempF = (1.8) * tempC + 32;
-	return tempF;
+function celsiusToFahrenheit (tempcelsius) {
+  // implement me!
+  var tempFresult = tempcelsius * 9/5 + 32;
+  return tempFresult;
 }
 
-function fahrenheitToCelsius (tempF) {
-	var tempC = (tempF - 32) / 1.8;
-	return tempC;
+function fahrenheitToCelsius (tempfahrenheit) {
+  // implement me!
+  var tempCresult = (tempfahrenheit - 32) * 5/9;
+  return tempCresult;
 }
