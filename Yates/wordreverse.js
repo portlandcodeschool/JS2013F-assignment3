@@ -1,7 +1,7 @@
 function wordReverse(phrase) {
   var word = phrase.split(" ").reverse().join(" ");
 
-  return word
+  return word;
 }
 
-console.log(wordReverse("Yer a wizard, Harry."))
+console.log(wordReverse("Yer a wizard, Harry."));
